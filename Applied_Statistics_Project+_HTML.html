@@ -1,0 +1,4401 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>b8ed64d6826b4b339bc3bf0c3f77b3ee</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell code" data-execution_count="63" id="7h_S2Tcm2-Ye">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy.stats <span class="im">as</span> stats</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> binom</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> poisson</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> statsmodels.stats.proportion <span class="im">import</span> proportions_ztest</span></code></pre></div>
+</div>
+<div class="cell markdown" id="dIuMK-wy0mH4">
+<p>Part A - 15 Marks</p>
+<ol>
+<li>A) Find the joint probability of the people who planned to purchase and actually placed an order</li>
+</ol>
+<p>Sol:- Total number of customer=2000 Number of people who planned to purchase prouduct A and placed an order=400</p>
+<p>Probability of the people who planned to purchase and actually placed an order=400/2000=0.2</p>
+<ol>
+<li>B) Find the joint probability of the people who planned to purchase and actually placed an order, given that people planned to purchase.</li>
+</ol>
+<p>Sol:- Number of people who planned to purchase=500</p>
+<p>Number of people who planned to purchase and placed an order=400</p>
+<p>Probability of people who planned to purchase and actually placed an order given that people who planned to purchase=400/500=0.8</p>
+</div>
+<div class="cell markdown" id="s94TqsXj-De7">
+<ol>
+<li>An electrical manufacturing company conducts quality checks at specified periods on the products it manufactures. Historically, the failure rate for the manufactured item is 5%. Suppose a random sample of 10 manufactured items is selected. Answer the following questions.</li>
+</ol>
+<p>2.A Probability that none of the items are defective?</p>
+</div>
+<div class="cell code" data-execution_count="64" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="dtzCUyP-_TyY" data-outputId="46d7ad9e-e512-4fdf-f5bb-3ec7ed276a84">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>k<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="dv">10</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span><span class="fl">0.05</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>stats.binom.pmf(k,n,p)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="64">
+<pre><code>0.5987369392383787</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="l3T6HwK4-8DH">
+<p>2.B. Probability that exactly one of the items is defective?</p>
+</div>
+<div class="cell code" data-execution_count="65" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="OtCa8ncv-8k5" data-outputId="b3ab74b8-5a3a-4464-eb78-9d86d7b159d5">
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span><span class="fl">0.05</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>k<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="dv">10</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>stats.binom.pmf(k,n,p)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="65">
+<pre><code>0.3151247048623047</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="ly3uF4Yg-80Z">
+<p>2.C. Probability that two or fewer of the items are defective?</p>
+</div>
+<div class="cell code" data-execution_count="66" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="k1Acunr5_ASl" data-outputId="682b9c7b-20a3-4101-c7eb-e11fa0b7c764">
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span><span class="fl">0.05</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>k<span class="op">=</span><span class="dv">2</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="dv">10</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>stats.binom.cdf(k,n,p)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="66">
+<pre><code>0.9884964426207031</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="6WIjvfMN_AqS">
+<p>2.D. Probability that three or more of the items are defective ?</p>
+</div>
+<div class="cell code" data-execution_count="67" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="l6fAe5v0_EfT" data-outputId="e077a32c-e0ad-4381-9d02-b30f523ce4ba">
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span><span class="fl">0.05</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>k<span class="op">=</span><span class="dv">3</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="dv">10</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>stats.binom.sf(k<span class="op">-</span><span class="dv">1</span>,n,p)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="67">
+<pre><code>0.011503557379296871</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="KjmuwmA4RoOd">
+<ol>
+<li>A car salesman sells on an average 3 cars per week.</li>
+</ol>
+</div>
+<div class="cell code" data-execution_count="68" id="RYMUPeHoV6k2">
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>avg<span class="op">=</span><span class="dv">3</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span>np.arange(<span class="dv">0</span>,<span class="dv">10</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>pro<span class="op">=</span>poisson.pmf(n,avg)</span></code></pre></div>
+</div>
+<div class="cell markdown" id="-0FM7Kh6V8Ap">
+<p>3.A. What is Probability that in a given week he will sell some cars?</p>
+</div>
+<div class="cell code" data-execution_count="69" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="jI0qKdKlTcSN" data-outputId="2c48f718-8534-4c1d-c348-7a6925171635">
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>pro[<span class="dv">0</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="69">
+<pre><code>0.049787068367863944</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="eYSMgN-mTbpn">
+<p>3.B. What is Probability that in a given week he will sell 2 or more but less than 5 cars?</p>
+</div>
+<div class="cell code" data-execution_count="70" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="0SoipkTTTc4x" data-outputId="85d40785-8f5a-4878-b8c9-53b34e1f1d68">
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>pro1<span class="op">=</span>pro[<span class="dv">2</span>]<span class="op">+</span>pro[<span class="dv">3</span>]<span class="op">+</span>pro[<span class="dv">4</span>]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>pro1</span></code></pre></div>
+<div class="output execute_result" data-execution_count="70">
+<pre><code>0.6161149710523164</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="gD6j37xBTdS1">
+<p>3.C. Plot the poisson distribution function for cumulative probability of cars sold per-week vs number of cars sold per week.</p>
+</div>
+<div class="cell code" data-execution_count="71" data-colab="{&quot;height&quot;:295,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="G4UjnNFlTd3P" data-outputId="c4ead9d4-aadc-48b8-e069-6802cdf6f0d5">
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> np.arange(<span class="dv">0</span>,<span class="dv">20</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>poisson <span class="op">=</span> stats.poisson.pmf(n,mu<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>plt.plot(n,poisson)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Poisson distribution plot&#39;</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Number of cars sold per-week&#39;</span>)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Probability of cars sold per-week&#39;</span>)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/ac77885217b0a76a19a26909af2a2d55df70fc48.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="nZSgYFh6YsNt">
+<ol>
+<li>Accuracy in understanding orders for a speech based bot at a restaurant is important for the Company X which has designed, marketed and launched the product for a contactless delivery due to the COVID-19 pandemic. Recognition accuracy that measures the percentage of orders that are taken correctly is 86.8%. Suppose that you place an order with the bot and two friends of yours independently place orders with the same bot. Answer the following questions. [3 Marks]</li>
+</ol>
+</div>
+<div class="cell markdown" id="Q4ogAYDLYtuh">
+<p>4.A. What is the probability that all three orders will be recognised correctly? [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="72" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="qOb-SRDSYuMM" data-outputId="b65b05e4-3814-410f-fefc-37e14a8dd82d">
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span><span class="fl">0.868</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="dv">3</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>a<span class="op">=</span>binom.pmf(k<span class="op">=</span><span class="dv">3</span>,n<span class="op">=</span>n,p<span class="op">=</span>p)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Probability that all three orders will be recognised correctly is </span><span class="sc">%1.4f</span><span class="st">&#39;</span><span class="op">%</span>a)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Probability that all three orders will be recognised correctly is 0.6540
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="d2yOLEpqYuaQ">
+<p>4.B. What is the probability that none of the three orders will be recognised correctly? [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="73" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="p8zO_C-VYu1F" data-outputId="4cd7962d-d2e8-4022-8b90-a2dd06174ca6">
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span><span class="fl">0.868</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="dv">3</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>a<span class="op">=</span>binom.pmf(k<span class="op">=</span><span class="dv">0</span>,n<span class="op">=</span>n,p<span class="op">=</span>p)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Probability that none of the three orders will be recognised correctly is </span><span class="sc">%1.4f</span><span class="st">&#39;</span> <span class="op">%</span>a)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Probability that none of the three orders will be recognised correctly is 0.0023
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="HHuMex35YvQB">
+<p>4.C. What is the probability that at least two of the three orders will be recognised correctly? [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="74" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="bpGlfhY5YvxM" data-outputId="c4502318-f43b-4e05-c2f1-d9c5e0c9de78">
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span><span class="fl">0.868</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="dv">3</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>k<span class="op">=</span>np.arange(<span class="dv">0</span>,<span class="dv">10</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>a<span class="op">=</span>binom.pmf(k,n,p)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39; Probability that at least two of the three orders will be recognised correctly is &#39;</span> ,a[<span class="dv">2</span>]<span class="op">+</span>a[<span class="dv">3</span>])</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code> Probability that at least two of the three orders will be recognised correctly is  0.952327936
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="t-9kDMK4vrzw">
+<ol>
+<li>Explain 1 real life industry scenario (other than the ones mentioned above) where you can use the concepts learnt in this module of Applied Statistics to get data driven business solution. [3 Marks]</li>
+</ol>
+<p>Solution:-Netflix is a great example of a big brand that uses industry application of statistics.An example of their data-driven business decision is how they recommend Movies/Web-series to their subscribers. Netflix builds and fine-tunes it's recommendation engine to better prdeict what their subscribers want to watch. The subscibers recieve a list in which they recommend movies/web-series they might like. These recommendations are based on what the subscribers have seen in past, And by collecting data from their 151 million subscribers, and implementing data analytics models to discover customer behaviour and buying patterns. Then, using that information to recommend movies and TV shows based on their subscribers’ preferences.According to Netflix, over 75% of viewer activity is based off personalised recommendations. Netflix collects several data points to create a detailed profile on its subscribers. The profile is far more detailed than the personas created through conventional marketing.Netflix collects customer interaction and response data to a TV show. For example, Netflix knows the time and date a user watched a show, the device used, if the show was paused, does the viewer resume watching after pausing? Do people finish an entire TV show or not, how long does it take for a user to finish a show and so on. Netflix has screenshots of scenes people might have viewed repeatedly,the number of searches and what is searched for. With this data, Netflix can create a detailed profile on its users. To collect all this data and harness it into meaningful information, Netflix requires data analytics. For example, Netflix uses what is known as the recommendation algorithm to suggest TV shows and movies based on user’s preferences. Netflix’s ability to collect and use the data is the reason behind their success, Netflix uses concepts of applied statistics and big data analytics to determine customer's interests.</p>
+</div>
+<div class="cell markdown" id="PW2DznDYEvUL">
+<p>Part B - 30 Marks</p>
+<p>• DOMAIN: Sports</p>
+<p>• CONTEXT: Company X manages the men's top professional basketball division of the American league system. The dataset contains information on all the teams that have participated in all the past tournaments. It has data about how many baskets each team scored, conceded, how many times they came within the first 2 positions, how many tournaments they have qualified, their best position in the past, etc.</p>
+<p>• DATA DESCRIPTION: Basketball.csv - The data set contains information on all the teams so far participated in all the past tournaments.</p>
+<p>• DATA DICTIONARY:</p>
+<ol>
+<li>Team: Team’s name</li>
+<li>Tournament: Number of played tournaments.</li>
+<li>Score: Team’s score so far.</li>
+<li>PlayedGames: Games played by the team so far.</li>
+<li>WonGames: Games won by the team so far.</li>
+<li>DrawnGames: Games drawn by the team so far.</li>
+<li>LostGames: Games lost by the team so far.</li>
+<li>BasketScored: Basket scored by the team so far.</li>
+<li>BasketGiven: Basket scored against the team so far.</li>
+<li>TournamentChampion: How many times the team was a champion of the tournaments so far.</li>
+<li>Runner-up: How many times the team was a runners-up of the tournaments so far.</li>
+<li>TeamLaunch: Year the team was launched on professional basketball.</li>
+<li>HighestPositionHeld: Highest position held by the team amongst all the tournaments played.</li>
+</ol>
+<p>• PROJECT OBJECTIVE: Company’s management wants to invest on proposals on managing some of the best teams in the league. The analytics department has been assigned with a task of creating a report on the performance shown by the teams. Some of the older teams are already in contract with competitors. Hence Company X wants to understand which teams they can approach which will be a deal win for them. • STEPS AND TASK [30 Marks]:</p>
+<ol>
+<li><p>Read the data set, clean the data and prepare final dataset to be used for analysis. [10 Marks]</p></li>
+<li><p>Please include any improvements or suggestions to the association management on quality, quantity, variety, velocity, veracity etc. on the data points collected by the association to perform a better data analysis in future. At-least 1 suggestion for each point. [10 Marks]</p></li>
+</ol>
+</div>
+<div class="cell code" data-execution_count="75" data-colab="{&quot;height&quot;:223,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="u9PcHLcfgKXL" data-outputId="2c6cc918-d1c0-4563-c2e1-26df459d1d98">
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> drive</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>drive.mount(<span class="st">&quot;/content/drive&quot;</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>data_basketball<span class="op">=</span>pd.read_csv(<span class="st">&quot;/content/drive/My Drive/Colab Notebooks/DS+-+Part2+-+Basketball.csv&quot;</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>data_basketball.shape</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>data_basketball.head()</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>data_basketball.tail()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Mounted at /content/drive
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="75">
+
+  <div id="df-2012d009-096d-42d4-a332-d0abab0a50ae">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Team</th>
+      <th>Tournament</th>
+      <th>Score</th>
+      <th>PlayedGames</th>
+      <th>WonGames</th>
+      <th>DrawnGames</th>
+      <th>LostGames</th>
+      <th>BasketScored</th>
+      <th>BasketGiven</th>
+      <th>TournamentChampion</th>
+      <th>Runner-up</th>
+      <th>TeamLaunch</th>
+      <th>HighestPositionHeld</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>56</th>
+      <td>Team 57</td>
+      <td>1</td>
+      <td>34</td>
+      <td>38</td>
+      <td>8</td>
+      <td>10</td>
+      <td>20</td>
+      <td>38</td>
+      <td>66</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2009-10</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Team 58</td>
+      <td>1</td>
+      <td>22</td>
+      <td>30</td>
+      <td>7</td>
+      <td>8</td>
+      <td>15</td>
+      <td>37</td>
+      <td>57</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1956-57</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Team 59</td>
+      <td>1</td>
+      <td>19</td>
+      <td>30</td>
+      <td>7</td>
+      <td>5</td>
+      <td>18</td>
+      <td>51</td>
+      <td>85</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1951~52</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Team 60</td>
+      <td>1</td>
+      <td>14</td>
+      <td>30</td>
+      <td>5</td>
+      <td>4</td>
+      <td>21</td>
+      <td>34</td>
+      <td>65</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1955-56</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Team 61</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2017~18</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2012d009-096d-42d4-a332-d0abab0a50ae')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-2012d009-096d-42d4-a332-d0abab0a50ae button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-2012d009-096d-42d4-a332-d0abab0a50ae');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="76" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="xUQew4Z5GS7Y" data-outputId="ca511e56-9e0f-461c-ac0c-cdd694621d6d">
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#As we can see their is no data in team 61 so we have to delete that row </span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>data_basketball.drop(<span class="dv">60</span>,inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>data_basketball.tail()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="76">
+
+  <div id="df-4bd2c2c5-e8fb-4057-a488-a5622fc464de">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Team</th>
+      <th>Tournament</th>
+      <th>Score</th>
+      <th>PlayedGames</th>
+      <th>WonGames</th>
+      <th>DrawnGames</th>
+      <th>LostGames</th>
+      <th>BasketScored</th>
+      <th>BasketGiven</th>
+      <th>TournamentChampion</th>
+      <th>Runner-up</th>
+      <th>TeamLaunch</th>
+      <th>HighestPositionHeld</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>55</th>
+      <td>Team 56</td>
+      <td>1</td>
+      <td>35</td>
+      <td>38</td>
+      <td>8</td>
+      <td>11</td>
+      <td>19</td>
+      <td>36</td>
+      <td>55</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2016_17</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Team 57</td>
+      <td>1</td>
+      <td>34</td>
+      <td>38</td>
+      <td>8</td>
+      <td>10</td>
+      <td>20</td>
+      <td>38</td>
+      <td>66</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2009-10</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Team 58</td>
+      <td>1</td>
+      <td>22</td>
+      <td>30</td>
+      <td>7</td>
+      <td>8</td>
+      <td>15</td>
+      <td>37</td>
+      <td>57</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1956-57</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Team 59</td>
+      <td>1</td>
+      <td>19</td>
+      <td>30</td>
+      <td>7</td>
+      <td>5</td>
+      <td>18</td>
+      <td>51</td>
+      <td>85</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1951~52</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Team 60</td>
+      <td>1</td>
+      <td>14</td>
+      <td>30</td>
+      <td>5</td>
+      <td>4</td>
+      <td>21</td>
+      <td>34</td>
+      <td>65</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1955-56</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4bd2c2c5-e8fb-4057-a488-a5622fc464de')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-4bd2c2c5-e8fb-4057-a488-a5622fc464de button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-4bd2c2c5-e8fb-4057-a488-a5622fc464de');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="77" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="M7_URYR2G-pd" data-outputId="0fab2f4a-487e-47cc-a573-913ace991de5">
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#to check for null values</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>data_basketball.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="77">
+<pre><code>Team                   0
+Tournament             0
+Score                  0
+PlayedGames            0
+WonGames               0
+DrawnGames             0
+LostGames              0
+BasketScored           0
+BasketGiven            0
+TournamentChampion     0
+Runner-up              0
+TeamLaunch             0
+HighestPositionHeld    0
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="78" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="PtHZPYjqMBzm" data-outputId="83098380-f5c5-481d-d420-23819898024a">
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>data_basketball.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 60 entries, 0 to 59
+Data columns (total 13 columns):
+ #   Column               Non-Null Count  Dtype 
+---  ------               --------------  ----- 
+ 0   Team                 60 non-null     object
+ 1   Tournament           60 non-null     int64 
+ 2   Score                60 non-null     object
+ 3   PlayedGames          60 non-null     object
+ 4   WonGames             60 non-null     object
+ 5   DrawnGames           60 non-null     object
+ 6   LostGames            60 non-null     object
+ 7   BasketScored         60 non-null     object
+ 8   BasketGiven          60 non-null     object
+ 9   TournamentChampion   60 non-null     object
+ 10  Runner-up            60 non-null     object
+ 11  TeamLaunch           60 non-null     object
+ 12  HighestPositionHeld  60 non-null     int64 
+dtypes: int64(2), object(11)
+memory usage: 6.6+ KB
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="79" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="pm7FifKON9ZD" data-outputId="7a360508-36fb-4da2-d7fc-f5ae98db5b9d">
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#we have to remove all &#39;-&#39; with nan</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>data_basketball.replace(<span class="st">&#39;-&#39;</span>,np.nan,inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>data_basketball.tail()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="79">
+
+  <div id="df-7e40834a-e4cf-4ed9-95c1-990672aa16f8">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Team</th>
+      <th>Tournament</th>
+      <th>Score</th>
+      <th>PlayedGames</th>
+      <th>WonGames</th>
+      <th>DrawnGames</th>
+      <th>LostGames</th>
+      <th>BasketScored</th>
+      <th>BasketGiven</th>
+      <th>TournamentChampion</th>
+      <th>Runner-up</th>
+      <th>TeamLaunch</th>
+      <th>HighestPositionHeld</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>55</th>
+      <td>Team 56</td>
+      <td>1</td>
+      <td>35</td>
+      <td>38</td>
+      <td>8</td>
+      <td>11</td>
+      <td>19</td>
+      <td>36</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2016_17</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Team 57</td>
+      <td>1</td>
+      <td>34</td>
+      <td>38</td>
+      <td>8</td>
+      <td>10</td>
+      <td>20</td>
+      <td>38</td>
+      <td>66</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2009-10</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Team 58</td>
+      <td>1</td>
+      <td>22</td>
+      <td>30</td>
+      <td>7</td>
+      <td>8</td>
+      <td>15</td>
+      <td>37</td>
+      <td>57</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1956-57</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Team 59</td>
+      <td>1</td>
+      <td>19</td>
+      <td>30</td>
+      <td>7</td>
+      <td>5</td>
+      <td>18</td>
+      <td>51</td>
+      <td>85</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1951~52</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Team 60</td>
+      <td>1</td>
+      <td>14</td>
+      <td>30</td>
+      <td>5</td>
+      <td>4</td>
+      <td>21</td>
+      <td>34</td>
+      <td>65</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1955-56</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7e40834a-e4cf-4ed9-95c1-990672aa16f8')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-7e40834a-e4cf-4ed9-95c1-990672aa16f8 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-7e40834a-e4cf-4ed9-95c1-990672aa16f8');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="80" id="yChPUgUpN3-b">
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">#as we can see the numeric values are also of type obejct here , so we have to change their datatype</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;Tournament&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;Tournament&#39;</span>])</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;Score&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;Score&#39;</span>])</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;PlayedGames&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;PlayedGames&#39;</span>])</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;WonGames&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;WonGames&#39;</span>])</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;DrawnGames&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;DrawnGames&#39;</span>])</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;LostGames&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;LostGames&#39;</span>])</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;BasketScored&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;BasketScored&#39;</span>])</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;BasketGiven&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;BasketGiven&#39;</span>])</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;TournamentChampion&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;TournamentChampion&#39;</span>])</span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;Runner-up&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;Runner-up&#39;</span>])</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="81" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="zn82acKYu96x" data-outputId="64ccaf41-95f2-45f4-c324-9d220f79cdf3">
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>data_basketball.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 60 entries, 0 to 59
+Data columns (total 13 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   Team                 60 non-null     object 
+ 1   Tournament           60 non-null     int64  
+ 2   Score                60 non-null     int64  
+ 3   PlayedGames          60 non-null     int64  
+ 4   WonGames             60 non-null     int64  
+ 5   DrawnGames           60 non-null     int64  
+ 6   LostGames            60 non-null     int64  
+ 7   BasketScored         60 non-null     int64  
+ 8   BasketGiven          60 non-null     int64  
+ 9   TournamentChampion   9 non-null      float64
+ 10  Runner-up            13 non-null     float64
+ 11  TeamLaunch           60 non-null     object 
+ 12  HighestPositionHeld  60 non-null     int64  
+dtypes: float64(2), int64(9), object(2)
+memory usage: 6.6+ KB
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="82" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="u0e4RPGYzU-v" data-outputId="0849abcd-6e32-4b64-d15d-089ebea84957">
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>data_basketball.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="82">
+
+  <div id="df-c5310aa3-fe26-409a-a110-9fe8854e371c">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Team</th>
+      <th>Tournament</th>
+      <th>Score</th>
+      <th>PlayedGames</th>
+      <th>WonGames</th>
+      <th>DrawnGames</th>
+      <th>LostGames</th>
+      <th>BasketScored</th>
+      <th>BasketGiven</th>
+      <th>TournamentChampion</th>
+      <th>Runner-up</th>
+      <th>TeamLaunch</th>
+      <th>HighestPositionHeld</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Team 1</td>
+      <td>86</td>
+      <td>4385</td>
+      <td>2762</td>
+      <td>1647</td>
+      <td>552</td>
+      <td>563</td>
+      <td>5947</td>
+      <td>3140</td>
+      <td>33.0</td>
+      <td>23.0</td>
+      <td>1929</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Team 2</td>
+      <td>86</td>
+      <td>4262</td>
+      <td>2762</td>
+      <td>1581</td>
+      <td>573</td>
+      <td>608</td>
+      <td>5900</td>
+      <td>3114</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>1929</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Team 3</td>
+      <td>80</td>
+      <td>3442</td>
+      <td>2614</td>
+      <td>1241</td>
+      <td>598</td>
+      <td>775</td>
+      <td>4534</td>
+      <td>3309</td>
+      <td>10.0</td>
+      <td>8.0</td>
+      <td>1929</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Team 4</td>
+      <td>82</td>
+      <td>3386</td>
+      <td>2664</td>
+      <td>1187</td>
+      <td>616</td>
+      <td>861</td>
+      <td>4398</td>
+      <td>3469</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>1931to32</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Team 5</td>
+      <td>86</td>
+      <td>3368</td>
+      <td>2762</td>
+      <td>1209</td>
+      <td>633</td>
+      <td>920</td>
+      <td>4631</td>
+      <td>3700</td>
+      <td>8.0</td>
+      <td>7.0</td>
+      <td>1929</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c5310aa3-fe26-409a-a110-9fe8854e371c')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-c5310aa3-fe26-409a-a110-9fe8854e371c button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-c5310aa3-fe26-409a-a110-9fe8854e371c');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="83" id="6Yql65KEzcZo">
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>year<span class="op">=</span>np.array(data_basketball.TeamLaunch)</span></code></pre></div>
+</div>
+<div class="cell markdown" id="QJJ7HURHGAsw">
+<ol>
+<li>Perform detailed statistical analysis and EDA using univariate, bi-variate and multivariate EDA techniques to get data driven insights on recommending which teams they can approach which will be a deal win for them. Also as a data and statistics expert you have to develop a detailed performance report using this data. [10 Marks]</li>
+</ol>
+<p>Hint: Use statistical techniques and visualisation techniques to come up with useful metrics and reporting. Find out the best performing team, oldest team, team with highest goals, team with lowest performance etc. and many more. These are just random examples. Please use your best analytical approach to build this report. You can mix match columns to create new ones which can be used for better analysis. Create your own features if required. Be highly experimental and analytical here to find hidden patterns. Use graphical interactive libraries to enable you to publish interactive plots in python.</p>
+</div>
+<div class="cell code" data-execution_count="84" id="7lc4Ta9A4GJL">
+<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">#here we have to take first 4 character to get year of launch</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;TeamLaunch&#39;</span>] <span class="op">=</span> pd.to_numeric(data_basketball[<span class="st">&#39;TeamLaunch&#39;</span>].<span class="bu">str</span>[:<span class="dv">4</span>])</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="85" id="Po5Yy6GaCzhD">
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">#now we will calculate age of each team</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> from_start_year_to_age(born):</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  today <span class="op">=</span> datetime.date.today()</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> today.year <span class="op">-</span> born</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>data_basketball[<span class="st">&#39;TeamAge&#39;</span>] <span class="op">=</span> data_basketball[<span class="st">&#39;TeamLaunch&#39;</span>].<span class="bu">apply</span>(from_start_year_to_age)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="86" data-colab="{&quot;height&quot;:635,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="snsCoDSWC-8J" data-outputId="2c7ca8e6-1e53-4b35-cdc2-69d1c286c0bb">
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>median_age <span class="op">=</span> data_basketball[<span class="st">&quot;TeamAge&quot;</span>].median()</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>data_basketball_old <span class="op">=</span> data_basketball[data_basketball[<span class="st">&quot;TeamAge&quot;</span>] <span class="op">&gt;</span> median_age]<span class="op">;</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">25</span>,<span class="dv">10</span>))</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">&#39;Team&#39;</span>, y<span class="op">=</span><span class="st">&quot;TeamAge&quot;</span>, data<span class="op">=</span>data_basketball_old,order<span class="op">=</span>data_basketball_old.sort_values(<span class="st">&#39;TeamAge&#39;</span>,ascending <span class="op">=</span> <span class="va">False</span>).Team )</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Old team Age plot&quot;</span>)</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Team&quot;</span>)</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/2f3044016a81cdb745ef2a010bfb1462554937b0.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="87" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="nPGVPBB8GsoV" data-outputId="4e2c60d0-3ffc-47c5-d2d4-86908dd57b50">
+<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Some of the older teams are already in contract with competitors,we will remove teams which are older than median age.</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>data_basketball_new <span class="op">=</span> data_basketball[data_basketball[<span class="st">&quot;TeamAge&quot;</span>] <span class="op">&lt;=</span> median_age]<span class="op">;</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>data_basketball_new.shape</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>data_basketball_new.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="87">
+
+  <div id="df-2b9ac532-ea3c-431c-87ba-0ef942a7e222">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Team</th>
+      <th>Tournament</th>
+      <th>Score</th>
+      <th>PlayedGames</th>
+      <th>WonGames</th>
+      <th>DrawnGames</th>
+      <th>LostGames</th>
+      <th>BasketScored</th>
+      <th>BasketGiven</th>
+      <th>TournamentChampion</th>
+      <th>Runner-up</th>
+      <th>TeamLaunch</th>
+      <th>HighestPositionHeld</th>
+      <th>TeamAge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>18</th>
+      <td>Team 19</td>
+      <td>27</td>
+      <td>1148</td>
+      <td>988</td>
+      <td>333</td>
+      <td>256</td>
+      <td>399</td>
+      <td>1182</td>
+      <td>1371</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1960</td>
+      <td>3</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Team 20</td>
+      <td>33</td>
+      <td>1020</td>
+      <td>1096</td>
+      <td>367</td>
+      <td>242</td>
+      <td>487</td>
+      <td>1347</td>
+      <td>1746</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1951</td>
+      <td>2</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Team 21</td>
+      <td>17</td>
+      <td>970</td>
+      <td>646</td>
+      <td>266</td>
+      <td>172</td>
+      <td>208</td>
+      <td>892</td>
+      <td>789</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1998</td>
+      <td>2</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Team 23</td>
+      <td>17</td>
+      <td>662</td>
+      <td>652</td>
+      <td>189</td>
+      <td>148</td>
+      <td>305</td>
+      <td>760</td>
+      <td>1088</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1977</td>
+      <td>8</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Team 24</td>
+      <td>21</td>
+      <td>606</td>
+      <td>678</td>
+      <td>203</td>
+      <td>180</td>
+      <td>295</td>
+      <td>750</td>
+      <td>1022</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1959</td>
+      <td>5</td>
+      <td>63</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2b9ac532-ea3c-431c-87ba-0ef942a7e222')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-2b9ac532-ea3c-431c-87ba-0ef942a7e222 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-2b9ac532-ea3c-431c-87ba-0ef942a7e222');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="88" data-colab="{&quot;height&quot;:486,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="ET2QyXEzHA8E" data-outputId="7c246114-7622-40f2-8cc4-1bbe827456ad">
+<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate Team winning strike rate. </span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>data_basketball_new[<span class="st">&#39;TeamWinStrikeRate&#39;</span>] <span class="op">=</span> data_basketball_new[<span class="st">&#39;WonGames&#39;</span>] <span class="op">/</span> data_basketball_new[<span class="st">&#39;PlayedGames&#39;</span>]</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="co"># We have final dataset to perform EDA</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>data_basketball_new.describe()</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="88">
+
+  <div id="df-db206084-4846-4299-9539-00e5ff013edc">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Tournament</th>
+      <th>Score</th>
+      <th>PlayedGames</th>
+      <th>WonGames</th>
+      <th>DrawnGames</th>
+      <th>LostGames</th>
+      <th>BasketScored</th>
+      <th>BasketGiven</th>
+      <th>TournamentChampion</th>
+      <th>Runner-up</th>
+      <th>TeamLaunch</th>
+      <th>HighestPositionHeld</th>
+      <th>TeamAge</th>
+      <th>TeamWinStrikeRate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>8.366667</td>
+      <td>304.266667</td>
+      <td>300.100000</td>
+      <td>91.600000</td>
+      <td>75.266667</td>
+      <td>132.900000</td>
+      <td>338.400000</td>
+      <td>448.300000</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1979.666667</td>
+      <td>10.000000</td>
+      <td>42.333333</td>
+      <td>0.276828</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8.049345</td>
+      <td>310.391736</td>
+      <td>282.196844</td>
+      <td>96.196853</td>
+      <td>69.083125</td>
+      <td>119.397438</td>
+      <td>345.154698</td>
+      <td>419.484343</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>20.411851</td>
+      <td>5.192833</td>
+      <td>20.411851</td>
+      <td>0.048701</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>14.000000</td>
+      <td>30.000000</td>
+      <td>5.000000</td>
+      <td>4.000000</td>
+      <td>15.000000</td>
+      <td>34.000000</td>
+      <td>55.000000</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1951.000000</td>
+      <td>2.000000</td>
+      <td>6.000000</td>
+      <td>0.166667</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.250000</td>
+      <td>81.500000</td>
+      <td>82.500000</td>
+      <td>21.500000</td>
+      <td>23.250000</td>
+      <td>38.750000</td>
+      <td>78.500000</td>
+      <td>122.500000</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1961.250000</td>
+      <td>6.250000</td>
+      <td>26.250000</td>
+      <td>0.238980</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>6.000000</td>
+      <td>189.000000</td>
+      <td>195.000000</td>
+      <td>56.000000</td>
+      <td>48.000000</td>
+      <td>92.500000</td>
+      <td>209.000000</td>
+      <td>303.000000</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1977.500000</td>
+      <td>8.500000</td>
+      <td>44.500000</td>
+      <td>0.281288</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>12.000000</td>
+      <td>405.750000</td>
+      <td>441.750000</td>
+      <td>120.500000</td>
+      <td>109.500000</td>
+      <td>197.750000</td>
+      <td>428.000000</td>
+      <td>632.750000</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1995.750000</td>
+      <td>14.750000</td>
+      <td>60.750000</td>
+      <td>0.305116</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>33.000000</td>
+      <td>1148.000000</td>
+      <td>1096.000000</td>
+      <td>367.000000</td>
+      <td>256.000000</td>
+      <td>487.000000</td>
+      <td>1347.000000</td>
+      <td>1746.000000</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>2016.000000</td>
+      <td>20.000000</td>
+      <td>71.000000</td>
+      <td>0.411765</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-db206084-4846-4299-9539-00e5ff013edc')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-db206084-4846-4299-9539-00e5ff013edc button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-db206084-4846-4299-9539-00e5ff013edc');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="89" data-colab="{&quot;height&quot;:632,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="K_er9gnXHJ0G" data-outputId="0995b0e4-314c-45c5-baf5-c88bc0289958">
+<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Best performing Teams by Team winning strike rate</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">25</span>,<span class="dv">10</span>))</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">&#39;Team&#39;</span>,y<span class="op">=</span><span class="st">&quot;TeamWinStrikeRate&quot;</span>, data<span class="op">=</span>data_basketball_new, order<span class="op">=</span>data_basketball_new.sort_values(<span class="st">&#39;TeamWinStrikeRate&#39;</span>,ascending <span class="op">=</span> <span class="va">False</span>).Team )</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Best performing Teams by winning strike rate&quot;</span>)</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Team&quot;</span>)</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/024866a78daaeeb404ca159bdb0762f2d428b1bf.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="90" data-colab="{&quot;height&quot;:630,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="YPCO0OGyHXik" data-outputId="881ab902-e945-439e-b751-d7aad5b2605f">
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#We can see Team 21 seems to have best winning strike rate</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Best performing Teams by Score</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">25</span>,<span class="dv">10</span>))</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">&#39;Team&#39;</span>,y<span class="op">=</span><span class="st">&quot;Score&quot;</span>, data<span class="op">=</span>data_basketball_new,order<span class="op">=</span>data_basketball_new.sort_values(<span class="st">&#39;Score&#39;</span>,ascending <span class="op">=</span> <span class="va">False</span>).Team)</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Best performing Teams by Score&quot;</span>)</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Team&quot;</span>)</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/f8e664673e631f7ca58b248c02a170868f932d3f.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="91" data-colab="{&quot;height&quot;:279,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="33A83oJMI3bf" data-outputId="4e1cbcfa-d6b5-472a-c1d6-bb09288f5f2a">
+<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">#But Team 19 seems to have the best performance by Score</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Lets do score analysis </span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span> data_basketball[<span class="st">&#39;Score&#39;</span>])</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/c7ef542aa1420981ae286a4872585927efdd57bf.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="92" data-colab="{&quot;height&quot;:630,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="SDms5LsYJFTj" data-outputId="505458ba-de77-418c-d3b1-965fc8223a7e">
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#There seems to be outliers in data wrt Score</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Team with highest goals</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">25</span>,<span class="dv">10</span>))</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">&#39;Team&#39;</span>,y<span class="op">=</span><span class="st">&quot;BasketScored&quot;</span>,data<span class="op">=</span>data_basketball_new,order<span class="op">=</span>data_basketball_new.sort_values(<span class="st">&#39;BasketScored&#39;</span>,ascending <span class="op">=</span> <span class="va">False</span>).Team)</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Team with highest basket scored&quot;</span>)</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Team&quot;</span>)</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/23fbce3ace9ca7d3b73887b30b3800d5578e1f64.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="93" data-colab="{&quot;height&quot;:630,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="Rp7dTXQLJTCY" data-outputId="f80b64fb-99a3-4143-fa10-ad418ebab1f8">
+<div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Team 20 has scored highest basket</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Team with Basket Given</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">25</span>,<span class="dv">10</span>))</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">&#39;Team&#39;</span>,y<span class="op">=</span><span class="st">&quot;BasketGiven&quot;</span>,data<span class="op">=</span>data_basketball_new,order<span class="op">=</span>data_basketball_new.sort_values(<span class="st">&#39;BasketGiven&#39;</span>,ascending <span class="op">=</span> <span class="va">False</span>).Team)</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Team with basket given&quot;</span>)</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Team&quot;</span>)</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/b3b17d653e2ccad89e671e00a944076cb83d33c7.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="94" data-colab="{&quot;height&quot;:332,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="lIdR_hhVLGXj" data-outputId="db52180a-caff-47e7-f9f4-0fb21c534c55">
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Team 20 has held the highest position</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Lets find the correlation with other parameters</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>data_basketball_new_corr <span class="op">=</span> data_basketball_new[[<span class="st">&#39;Score&#39;</span>,<span class="st">&#39;PlayedGames&#39;</span>,<span class="st">&#39;WonGames&#39;</span>,<span class="st">&#39;DrawnGames&#39;</span>,<span class="st">&#39;LostGames&#39;</span>,<span class="st">&#39;BasketScored&#39;</span>,<span class="st">&#39;BasketGiven&#39;</span>,<span class="st">&#39;HighestPositionHeld&#39;</span>,<span class="st">&#39;TeamWinStrikeRate&#39;</span>]].corr()</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>data_basketball_new_corr</span></code></pre></div>
+<div class="output execute_result" data-execution_count="94">
+
+  <div id="df-243b985a-320a-478f-8ff7-db09b24af024">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Score</th>
+      <th>PlayedGames</th>
+      <th>WonGames</th>
+      <th>DrawnGames</th>
+      <th>LostGames</th>
+      <th>BasketScored</th>
+      <th>BasketGiven</th>
+      <th>HighestPositionHeld</th>
+      <th>TeamWinStrikeRate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Score</th>
+      <td>1.000000</td>
+      <td>0.970107</td>
+      <td>0.988137</td>
+      <td>0.971972</td>
+      <td>0.931018</td>
+      <td>0.983056</td>
+      <td>0.941443</td>
+      <td>-0.761062</td>
+      <td>0.720781</td>
+    </tr>
+    <tr>
+      <th>PlayedGames</th>
+      <td>0.970107</td>
+      <td>1.000000</td>
+      <td>0.987927</td>
+      <td>0.991694</td>
+      <td>0.990156</td>
+      <td>0.990579</td>
+      <td>0.991861</td>
+      <td>-0.759895</td>
+      <td>0.641614</td>
+    </tr>
+    <tr>
+      <th>WonGames</th>
+      <td>0.988137</td>
+      <td>0.987927</td>
+      <td>1.000000</td>
+      <td>0.979600</td>
+      <td>0.959568</td>
+      <td>0.996517</td>
+      <td>0.969690</td>
+      <td>-0.762780</td>
+      <td>0.700673</td>
+    </tr>
+    <tr>
+      <th>DrawnGames</th>
+      <td>0.971972</td>
+      <td>0.991694</td>
+      <td>0.979600</td>
+      <td>1.000000</td>
+      <td>0.972988</td>
+      <td>0.979064</td>
+      <td>0.972361</td>
+      <td>-0.764752</td>
+      <td>0.639928</td>
+    </tr>
+    <tr>
+      <th>LostGames</th>
+      <td>0.931018</td>
+      <td>0.990156</td>
+      <td>0.959568</td>
+      <td>0.972988</td>
+      <td>1.000000</td>
+      <td>0.968349</td>
+      <td>0.995996</td>
+      <td>-0.737862</td>
+      <td>0.580902</td>
+    </tr>
+    <tr>
+      <th>BasketScored</th>
+      <td>0.983056</td>
+      <td>0.990579</td>
+      <td>0.996517</td>
+      <td>0.979064</td>
+      <td>0.968349</td>
+      <td>1.000000</td>
+      <td>0.980521</td>
+      <td>-0.753825</td>
+      <td>0.681171</td>
+    </tr>
+    <tr>
+      <th>BasketGiven</th>
+      <td>0.941443</td>
+      <td>0.991861</td>
+      <td>0.969690</td>
+      <td>0.972361</td>
+      <td>0.995996</td>
+      <td>0.980521</td>
+      <td>1.000000</td>
+      <td>-0.730334</td>
+      <td>0.598401</td>
+    </tr>
+    <tr>
+      <th>HighestPositionHeld</th>
+      <td>-0.761062</td>
+      <td>-0.759895</td>
+      <td>-0.762780</td>
+      <td>-0.764752</td>
+      <td>-0.737862</td>
+      <td>-0.753825</td>
+      <td>-0.730334</td>
+      <td>1.000000</td>
+      <td>-0.743443</td>
+    </tr>
+    <tr>
+      <th>TeamWinStrikeRate</th>
+      <td>0.720781</td>
+      <td>0.641614</td>
+      <td>0.700673</td>
+      <td>0.639928</td>
+      <td>0.580902</td>
+      <td>0.681171</td>
+      <td>0.598401</td>
+      <td>-0.743443</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-243b985a-320a-478f-8ff7-db09b24af024')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-243b985a-320a-478f-8ff7-db09b24af024 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-243b985a-320a-478f-8ff7-db09b24af024');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="95" data-colab="{&quot;height&quot;:686,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="j2c7QWnGLQax" data-outputId="36c9ee5e-5cac-4762-bfba-b1eeb9726339">
+<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>fig,ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>)) </span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>sns.heatmap(data_basketball_new_corr.corr(), ax<span class="op">=</span>ax, annot<span class="op">=</span><span class="va">True</span>, linewidths<span class="op">=</span><span class="fl">0.05</span>, fmt<span class="op">=</span><span class="st">&#39;.2f&#39;</span>,cmap<span class="op">=</span><span class="st">&quot;magma&quot;</span>) <span class="co"># the color intensity is based on </span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/48ea71c81a8bf850244d93acf81b181950011476.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="96" data-colab="{&quot;height&quot;:1000,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="_TRrT5QyLS7x" data-outputId="978ba312-6d3d-4175-ebd9-4486a4318532">
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Score, PlayedGames, WonGames, DrawnGames, LostGames, BasketScored, BasketGiven,TeamWinStrikeRate are positively correlated.</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="co"># chekc correlation using the pairplot plots scatter plots for every pair of attributes and histograms along the diagonal</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>sns.pairplot(data_basketball_new,<span class="bu">vars</span><span class="op">=</span>[<span class="st">&#39;Score&#39;</span>,<span class="st">&#39;PlayedGames&#39;</span>,<span class="st">&#39;WonGames&#39;</span>,<span class="st">&#39;DrawnGames&#39;</span>,<span class="st">&#39;LostGames&#39;</span>,<span class="st">&#39;BasketScored&#39;</span>,<span class="st">&#39;BasketGiven&#39;</span>,<span class="st">&#39;HighestPositionHeld&#39;</span>,<span class="st">&#39;TeamWinStrikeRate&#39;</span>])</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/ad3135e4320c94b0588d3e09e823d697ba1ff904.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="97" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="FcZ4UvosLhI3" data-outputId="93de7143-c68c-44cb-e2b1-9e67cf7bc457">
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We can conclude that based on Score, BasketScored and TeamWinStrikeRate below are the top 5 new teams which they can approach for contract.</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>data_basketball_new_top_score <span class="op">=</span> data_basketball_new.sort_values(<span class="st">&#39;Score&#39;</span>,ascending <span class="op">=</span> <span class="va">False</span>).groupby(<span class="st">&#39;Team&#39;</span>).head()[<span class="st">&#39;Team&#39;</span>] </span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>data_basketball_new_top_basket_scored <span class="op">=</span> data_basketball_new.sort_values(<span class="st">&#39;BasketScored&#39;</span>,ascending <span class="op">=</span> <span class="va">False</span>).groupby(<span class="st">&#39;Team&#39;</span>).head()[<span class="st">&#39;Team&#39;</span>] </span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>data_basketball_new_top_win_strike_rate <span class="op">=</span> data_basketball_new.sort_values(<span class="st">&#39;TeamWinStrikeRate&#39;</span>,ascending <span class="op">=</span> <span class="va">False</span>).groupby(<span class="st">&#39;Team&#39;</span>).head()[<span class="st">&#39;Team&#39;</span>]</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>data_basketball_new_top <span class="op">=</span> pd.merge(pd.merge(data_basketball_new_top_score,data_basketball_new_top_basket_scored,on<span class="op">=</span><span class="st">&#39;Team&#39;</span>),data_basketball_new_top_win_strike_rate,on<span class="op">=</span><span class="st">&#39;Team&#39;</span>)</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>data_basketball_new_top.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="97">
+
+  <div id="df-be7bc67f-0465-408e-b06d-22956b6888d2">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Team</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Team 19</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Team 20</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Team 21</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Team 23</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Team 24</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-be7bc67f-0465-408e-b06d-22956b6888d2')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-be7bc67f-0465-408e-b06d-22956b6888d2 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-be7bc67f-0465-408e-b06d-22956b6888d2');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell markdown" id="Z6fvpkpPNqEz">
+<ol>
+<li>Please include any improvements or suggestions to the association management on quality, quantity, variety, velocity, veracity etc. on the data points collected by the association to perform a better data analysis in future. At-least 1 suggestion for each point. [10 Marks]</li>
+</ol>
+</div>
+<div class="cell code" data-execution_count="98" data-colab="{&quot;height&quot;:1000,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="qVF51qPBLyem" data-outputId="899aece5-f41c-49ad-aa07-2641f8979011">
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>data_basketball.head(<span class="dv">60</span>)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="co">#1. It is not evident from the data that which teams are already in contract with competitors. This would have helped to eliminate these teams from performance evaluation </span></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="co">#2. It is not evident from the data how teams are performing recently. This would have helped to evalauate the recent team performance correctly. </span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="co">#3. The data has lots missing value from TournamentChampion and	Runner-up column.</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a><span class="co">#4. The data in Teamlaunch is not written properly. </span></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a><span class="co">#5. There should two different column named Teamlaunch(year in which team was launched) and TeamTermination(year in which team was terminated).</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="98">
+
+  <div id="df-7c6bb039-623a-42c6-8ccc-920787399fe1">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Team</th>
+      <th>Tournament</th>
+      <th>Score</th>
+      <th>PlayedGames</th>
+      <th>WonGames</th>
+      <th>DrawnGames</th>
+      <th>LostGames</th>
+      <th>BasketScored</th>
+      <th>BasketGiven</th>
+      <th>TournamentChampion</th>
+      <th>Runner-up</th>
+      <th>TeamLaunch</th>
+      <th>HighestPositionHeld</th>
+      <th>TeamAge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Team 1</td>
+      <td>86</td>
+      <td>4385</td>
+      <td>2762</td>
+      <td>1647</td>
+      <td>552</td>
+      <td>563</td>
+      <td>5947</td>
+      <td>3140</td>
+      <td>33.0</td>
+      <td>23.0</td>
+      <td>1929</td>
+      <td>1</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Team 2</td>
+      <td>86</td>
+      <td>4262</td>
+      <td>2762</td>
+      <td>1581</td>
+      <td>573</td>
+      <td>608</td>
+      <td>5900</td>
+      <td>3114</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>1929</td>
+      <td>1</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Team 3</td>
+      <td>80</td>
+      <td>3442</td>
+      <td>2614</td>
+      <td>1241</td>
+      <td>598</td>
+      <td>775</td>
+      <td>4534</td>
+      <td>3309</td>
+      <td>10.0</td>
+      <td>8.0</td>
+      <td>1929</td>
+      <td>1</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Team 4</td>
+      <td>82</td>
+      <td>3386</td>
+      <td>2664</td>
+      <td>1187</td>
+      <td>616</td>
+      <td>861</td>
+      <td>4398</td>
+      <td>3469</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>1931</td>
+      <td>1</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Team 5</td>
+      <td>86</td>
+      <td>3368</td>
+      <td>2762</td>
+      <td>1209</td>
+      <td>633</td>
+      <td>920</td>
+      <td>4631</td>
+      <td>3700</td>
+      <td>8.0</td>
+      <td>7.0</td>
+      <td>1929</td>
+      <td>1</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Team 6</td>
+      <td>73</td>
+      <td>2819</td>
+      <td>2408</td>
+      <td>990</td>
+      <td>531</td>
+      <td>887</td>
+      <td>3680</td>
+      <td>3373</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>1934</td>
+      <td>1</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Team 7</td>
+      <td>82</td>
+      <td>2792</td>
+      <td>2626</td>
+      <td>948</td>
+      <td>608</td>
+      <td>1070</td>
+      <td>3609</td>
+      <td>3889</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1929</td>
+      <td>3</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Team 8</td>
+      <td>70</td>
+      <td>2573</td>
+      <td>2302</td>
+      <td>864</td>
+      <td>577</td>
+      <td>861</td>
+      <td>3228</td>
+      <td>3230</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>1929</td>
+      <td>1</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Team 9</td>
+      <td>58</td>
+      <td>2109</td>
+      <td>1986</td>
+      <td>698</td>
+      <td>522</td>
+      <td>766</td>
+      <td>2683</td>
+      <td>2847</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1939</td>
+      <td>2</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Team 10</td>
+      <td>51</td>
+      <td>1884</td>
+      <td>1728</td>
+      <td>606</td>
+      <td>440</td>
+      <td>682</td>
+      <td>2159</td>
+      <td>2492</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>1932</td>
+      <td>1</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Team 11</td>
+      <td>45</td>
+      <td>1814</td>
+      <td>1530</td>
+      <td>563</td>
+      <td>392</td>
+      <td>575</td>
+      <td>2052</td>
+      <td>2188</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>1941</td>
+      <td>1</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Team 12</td>
+      <td>51</td>
+      <td>1789</td>
+      <td>1698</td>
+      <td>586</td>
+      <td>389</td>
+      <td>723</td>
+      <td>2278</td>
+      <td>2624</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1939</td>
+      <td>4</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Team 13</td>
+      <td>42</td>
+      <td>1471</td>
+      <td>1466</td>
+      <td>463</td>
+      <td>384</td>
+      <td>619</td>
+      <td>1767</td>
+      <td>2180</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1948</td>
+      <td>4</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Team 14</td>
+      <td>44</td>
+      <td>1416</td>
+      <td>1428</td>
+      <td>453</td>
+      <td>336</td>
+      <td>639</td>
+      <td>1843</td>
+      <td>2368</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1929</td>
+      <td>2</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Team 15</td>
+      <td>43</td>
+      <td>1389</td>
+      <td>1458</td>
+      <td>471</td>
+      <td>358</td>
+      <td>629</td>
+      <td>1753</td>
+      <td>2152</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1944</td>
+      <td>2</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Team 16</td>
+      <td>37</td>
+      <td>1351</td>
+      <td>1318</td>
+      <td>426</td>
+      <td>327</td>
+      <td>565</td>
+      <td>1500</td>
+      <td>1834</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1935</td>
+      <td>4</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Team 17</td>
+      <td>36</td>
+      <td>1314</td>
+      <td>1255</td>
+      <td>390</td>
+      <td>330</td>
+      <td>535</td>
+      <td>1421</td>
+      <td>1763</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1949</td>
+      <td>4</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Team 18</td>
+      <td>38</td>
+      <td>1174</td>
+      <td>1192</td>
+      <td>408</td>
+      <td>292</td>
+      <td>492</td>
+      <td>1642</td>
+      <td>1951</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1933</td>
+      <td>3</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Team 19</td>
+      <td>27</td>
+      <td>1148</td>
+      <td>988</td>
+      <td>333</td>
+      <td>256</td>
+      <td>399</td>
+      <td>1182</td>
+      <td>1371</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1960</td>
+      <td>3</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Team 20</td>
+      <td>33</td>
+      <td>1020</td>
+      <td>1096</td>
+      <td>367</td>
+      <td>242</td>
+      <td>487</td>
+      <td>1347</td>
+      <td>1746</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1951</td>
+      <td>2</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Team 21</td>
+      <td>17</td>
+      <td>970</td>
+      <td>646</td>
+      <td>266</td>
+      <td>172</td>
+      <td>208</td>
+      <td>892</td>
+      <td>789</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1998</td>
+      <td>2</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Team 22</td>
+      <td>23</td>
+      <td>667</td>
+      <td>742</td>
+      <td>218</td>
+      <td>175</td>
+      <td>349</td>
+      <td>819</td>
+      <td>1157</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1941</td>
+      <td>6</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Team 23</td>
+      <td>17</td>
+      <td>662</td>
+      <td>652</td>
+      <td>189</td>
+      <td>148</td>
+      <td>305</td>
+      <td>760</td>
+      <td>1088</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1977</td>
+      <td>8</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Team 24</td>
+      <td>21</td>
+      <td>606</td>
+      <td>678</td>
+      <td>203</td>
+      <td>180</td>
+      <td>295</td>
+      <td>750</td>
+      <td>1022</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1959</td>
+      <td>5</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Team 25</td>
+      <td>12</td>
+      <td>553</td>
+      <td>456</td>
+      <td>147</td>
+      <td>112</td>
+      <td>197</td>
+      <td>520</td>
+      <td>633</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2004</td>
+      <td>6</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Team 26</td>
+      <td>20</td>
+      <td>538</td>
+      <td>628</td>
+      <td>184</td>
+      <td>149</td>
+      <td>295</td>
+      <td>716</td>
+      <td>1050</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1935</td>
+      <td>5</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Team 27</td>
+      <td>13</td>
+      <td>510</td>
+      <td>494</td>
+      <td>155</td>
+      <td>128</td>
+      <td>211</td>
+      <td>619</td>
+      <td>744</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1961</td>
+      <td>5</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Team 28</td>
+      <td>18</td>
+      <td>445</td>
+      <td>586</td>
+      <td>145</td>
+      <td>143</td>
+      <td>298</td>
+      <td>607</td>
+      <td>992</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1940</td>
+      <td>11</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Team 29</td>
+      <td>12</td>
+      <td>421</td>
+      <td>380</td>
+      <td>125</td>
+      <td>81</td>
+      <td>174</td>
+      <td>458</td>
+      <td>623</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1930</td>
+      <td>6</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Team 30</td>
+      <td>11</td>
+      <td>416</td>
+      <td>402</td>
+      <td>113</td>
+      <td>95</td>
+      <td>194</td>
+      <td>430</td>
+      <td>632</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1963</td>
+      <td>6</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Team 31</td>
+      <td>12</td>
+      <td>375</td>
+      <td>423</td>
+      <td>123</td>
+      <td>102</td>
+      <td>198</td>
+      <td>422</td>
+      <td>581</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1974</td>
+      <td>7</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Team 32</td>
+      <td>14</td>
+      <td>353</td>
+      <td>426</td>
+      <td>129</td>
+      <td>95</td>
+      <td>202</td>
+      <td>492</td>
+      <td>720</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1943</td>
+      <td>4</td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Team 33</td>
+      <td>12</td>
+      <td>343</td>
+      <td>448</td>
+      <td>104</td>
+      <td>127</td>
+      <td>217</td>
+      <td>393</td>
+      <td>662</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1977</td>
+      <td>12</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Team 34</td>
+      <td>9</td>
+      <td>293</td>
+      <td>346</td>
+      <td>96</td>
+      <td>92</td>
+      <td>158</td>
+      <td>291</td>
+      <td>489</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1987</td>
+      <td>7</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Team 35</td>
+      <td>11</td>
+      <td>285</td>
+      <td>334</td>
+      <td>103</td>
+      <td>79</td>
+      <td>152</td>
+      <td>419</td>
+      <td>588</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1941</td>
+      <td>4</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Team 36</td>
+      <td>7</td>
+      <td>277</td>
+      <td>270</td>
+      <td>76</td>
+      <td>76</td>
+      <td>118</td>
+      <td>320</td>
+      <td>410</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1991</td>
+      <td>7</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Team 37</td>
+      <td>6</td>
+      <td>242</td>
+      <td>228</td>
+      <td>62</td>
+      <td>56</td>
+      <td>110</td>
+      <td>244</td>
+      <td>366</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2007</td>
+      <td>8</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Team 38</td>
+      <td>9</td>
+      <td>230</td>
+      <td>282</td>
+      <td>82</td>
+      <td>63</td>
+      <td>137</td>
+      <td>285</td>
+      <td>430</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1962</td>
+      <td>5</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Team 39</td>
+      <td>4</td>
+      <td>190</td>
+      <td>160</td>
+      <td>52</td>
+      <td>45</td>
+      <td>63</td>
+      <td>199</td>
+      <td>241</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1994</td>
+      <td>10</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Team 40</td>
+      <td>5</td>
+      <td>188</td>
+      <td>186</td>
+      <td>50</td>
+      <td>46</td>
+      <td>90</td>
+      <td>202</td>
+      <td>296</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1978</td>
+      <td>8</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>Team 41</td>
+      <td>6</td>
+      <td>168</td>
+      <td>204</td>
+      <td>59</td>
+      <td>50</td>
+      <td>95</td>
+      <td>216</td>
+      <td>310</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1971</td>
+      <td>12</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Team 42</td>
+      <td>6</td>
+      <td>150</td>
+      <td>180</td>
+      <td>53</td>
+      <td>44</td>
+      <td>83</td>
+      <td>165</td>
+      <td>221</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1963</td>
+      <td>7</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Team 43</td>
+      <td>4</td>
+      <td>148</td>
+      <td>152</td>
+      <td>37</td>
+      <td>37</td>
+      <td>78</td>
+      <td>155</td>
+      <td>253</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1999</td>
+      <td>17</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Team 44</td>
+      <td>3</td>
+      <td>132</td>
+      <td>114</td>
+      <td>35</td>
+      <td>27</td>
+      <td>52</td>
+      <td>139</td>
+      <td>167</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2014</td>
+      <td>10</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Team 45</td>
+      <td>7</td>
+      <td>107</td>
+      <td>130</td>
+      <td>43</td>
+      <td>21</td>
+      <td>66</td>
+      <td>227</td>
+      <td>308</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1929</td>
+      <td>3</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Team 46</td>
+      <td>3</td>
+      <td>96</td>
+      <td>114</td>
+      <td>26</td>
+      <td>44</td>
+      <td>44</td>
+      <td>101</td>
+      <td>139</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1990</td>
+      <td>9</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Team 47</td>
+      <td>4</td>
+      <td>91</td>
+      <td>116</td>
+      <td>34</td>
+      <td>16</td>
+      <td>66</td>
+      <td>181</td>
+      <td>295</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1947</td>
+      <td>7</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Team 48</td>
+      <td>2</td>
+      <td>83</td>
+      <td>80</td>
+      <td>20</td>
+      <td>23</td>
+      <td>37</td>
+      <td>62</td>
+      <td>117</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1996</td>
+      <td>17</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Team 49</td>
+      <td>2</td>
+      <td>81</td>
+      <td>80</td>
+      <td>19</td>
+      <td>24</td>
+      <td>37</td>
+      <td>70</td>
+      <td>115</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1995</td>
+      <td>19</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Team 50</td>
+      <td>4</td>
+      <td>76</td>
+      <td>108</td>
+      <td>30</td>
+      <td>16</td>
+      <td>62</td>
+      <td>145</td>
+      <td>252</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1945</td>
+      <td>10</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>Team 51</td>
+      <td>3</td>
+      <td>71</td>
+      <td>90</td>
+      <td>29</td>
+      <td>13</td>
+      <td>48</td>
+      <td>121</td>
+      <td>183</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1953</td>
+      <td>14</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>Team 52</td>
+      <td>4</td>
+      <td>56</td>
+      <td>72</td>
+      <td>21</td>
+      <td>14</td>
+      <td>37</td>
+      <td>153</td>
+      <td>184</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1929</td>
+      <td>6</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>Team 53</td>
+      <td>2</td>
+      <td>52</td>
+      <td>68</td>
+      <td>17</td>
+      <td>18</td>
+      <td>33</td>
+      <td>71</td>
+      <td>116</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1979</td>
+      <td>10</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Team 54</td>
+      <td>3</td>
+      <td>42</td>
+      <td>54</td>
+      <td>18</td>
+      <td>6</td>
+      <td>30</td>
+      <td>97</td>
+      <td>131</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1929</td>
+      <td>8</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Team 55</td>
+      <td>2</td>
+      <td>40</td>
+      <td>68</td>
+      <td>13</td>
+      <td>14</td>
+      <td>41</td>
+      <td>70</td>
+      <td>182</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1950</td>
+      <td>16</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Team 56</td>
+      <td>1</td>
+      <td>35</td>
+      <td>38</td>
+      <td>8</td>
+      <td>11</td>
+      <td>19</td>
+      <td>36</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2016</td>
+      <td>17</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Team 57</td>
+      <td>1</td>
+      <td>34</td>
+      <td>38</td>
+      <td>8</td>
+      <td>10</td>
+      <td>20</td>
+      <td>38</td>
+      <td>66</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2009</td>
+      <td>20</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Team 58</td>
+      <td>1</td>
+      <td>22</td>
+      <td>30</td>
+      <td>7</td>
+      <td>8</td>
+      <td>15</td>
+      <td>37</td>
+      <td>57</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1956</td>
+      <td>16</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Team 59</td>
+      <td>1</td>
+      <td>19</td>
+      <td>30</td>
+      <td>7</td>
+      <td>5</td>
+      <td>18</td>
+      <td>51</td>
+      <td>85</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1951</td>
+      <td>16</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Team 60</td>
+      <td>1</td>
+      <td>14</td>
+      <td>30</td>
+      <td>5</td>
+      <td>4</td>
+      <td>21</td>
+      <td>34</td>
+      <td>65</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1955</td>
+      <td>15</td>
+      <td>67</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7c6bb039-623a-42c6-8ccc-920787399fe1')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-7c6bb039-623a-42c6-8ccc-920787399fe1 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-7c6bb039-623a-42c6-8ccc-920787399fe1');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<section id="part-c---15-marks" class="cell markdown" id="0DQtlRKKNrcs">
+<h1>Part C - 15 Marks</h1>
+<p>• DOMAIN: Startup ecosystem</p>
+<p>• CONTEXT: Company X is a EU online publisher focusing on the startups industry. The company specifically reports on the business related to technology news, analysis of emerging trends and profiling of new tech businesses and products. Their event i.e. Startup Battlefield is the world’s pre-eminent startup competition. Startup Battlefield features 15-30 top early stage startups pitching top judges in front of a vast live audience, present in person and online.</p>
+<p>• DATA DESCRIPTION: CompanyX_EU.csv - Each row in the dataset is a Start-up company and the columns describe the company.</p>
+<p>• DATA DICTIONARY:</p>
+<ol>
+<li>Startup: Name of the company</li>
+<li>Product: Actual product</li>
+<li>Funding: Funds raised by the company in USD</li>
+<li>Event: The event the company participated in</li>
+<li>Result: Described by Contestant, Finalist, Audience choice, Winner or Runner up</li>
+<li>OperatingState: Current status of the company, Operating ,Closed, Acquired or IPO *Dataset has been downloaded from the internet. All the credit for the dataset goes to the original creator of the data. • PROJECT OBJECTIVE: Analyse the data of the various companies from the given dataset and perform the tasks that are specified in the below steps. Draw insights from the various attributes that are present in the dataset, plot distributions, state hypotheses and draw conclusions from the dataset. • STEPS AND TASK [15 Marks]:</li>
+<li>Read the CSV file.</li>
+</ol>
+</section>
+<div class="cell code" data-execution_count="99" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="xDIeJ24vQmHL" data-outputId="400f1e0c-11c1-4983-dc18-2c1cad834ae3">
+<div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> drive</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>drive.mount(<span class="st">&quot;/content/drive&quot;</span>)</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>data_company<span class="op">=</span>pd.read_csv(<span class="st">&quot;/content/drive/My Drive/Colab Notebooks/DS+-+Part3+-+CompanyX_EU.csv&quot;</span>)</span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>data_company.shape</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&quot;/content/drive&quot;, force_remount=True).
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="99">
+<pre><code>(662, 6)</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="iCsXzi31QmmY">
+<ol>
+<li>Data Exploration: [1 Mark]</li>
+</ol>
+<p>A. Check the datatypes of each attribute.</p>
+</div>
+<div class="cell code" data-execution_count="100" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="c30Ayk9CQ1Zy" data-outputId="ca488f8e-4b9e-4bd6-f91d-52c576499a94">
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>data_company.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 662 entries, 0 to 661
+Data columns (total 6 columns):
+ #   Column          Non-Null Count  Dtype 
+---  ------          --------------  ----- 
+ 0   Startup         662 non-null    object
+ 1   Product         656 non-null    object
+ 2   Funding         448 non-null    object
+ 3   Event           662 non-null    object
+ 4   Result          662 non-null    object
+ 5   OperatingState  662 non-null    object
+dtypes: object(6)
+memory usage: 31.2+ KB
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="101" data-colab="{&quot;height&quot;:175,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="_OiR_PdUZ29t" data-outputId="7baa33a5-e76f-4e95-8bc6-0d3cabcb2ed1">
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>data_company.describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="101">
+
+  <div id="df-808493cc-483e-45c2-abee-3cb013efa404">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Startup</th>
+      <th>Product</th>
+      <th>Funding</th>
+      <th>Event</th>
+      <th>Result</th>
+      <th>OperatingState</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>662</td>
+      <td>656</td>
+      <td>448</td>
+      <td>662</td>
+      <td>662</td>
+      <td>662</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>662</td>
+      <td>656</td>
+      <td>240</td>
+      <td>26</td>
+      <td>5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>2600Hz</td>
+      <td>2600hz.com</td>
+      <td>$1M</td>
+      <td>TC50 2008</td>
+      <td>Contestant</td>
+      <td>Operating</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>1</td>
+      <td>1</td>
+      <td>17</td>
+      <td>52</td>
+      <td>488</td>
+      <td>465</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-808493cc-483e-45c2-abee-3cb013efa404')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-808493cc-483e-45c2-abee-3cb013efa404 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-808493cc-483e-45c2-abee-3cb013efa404');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell markdown" id="Whg1g652So-u">
+<p>B. Check for null values in the attributes</p>
+</div>
+<div class="cell code" data-execution_count="102" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="_9hAZD2nSvOO" data-outputId="e6b81f90-a5c3-43bc-8e5d-e47702d32435">
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>data_company.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="102">
+<pre><code>Startup             0
+Product             6
+Funding           214
+Event               0
+Result              0
+OperatingState      0
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="ZL-krQL7Q1rO">
+<ol>
+<li>Data preprocessing &amp; visualisation: [4 Marks]</li>
+</ol>
+<p>A. Drop the null values. [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="103" id="tBReL6r5QnPp">
+<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>data_company <span class="op">=</span> data_company.dropna(subset<span class="op">=</span>[<span class="st">&#39;Funding&#39;</span>]) <span class="co"># Drop the null values</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="EZI2QQvbaz0L">
+<p>B. Convert the ‘Funding’ features to a numerical value. (Execute below code) data_company.loc[:,'Funds_in_million'] = data_company['Funding'].apply(lambda x: float(x[1:-1])/1000 if x[-1] == 'K' else (float(x[1:-1])*1000 if x[-1] == 'B' else float(x[1:-1])))</p>
+</div>
+<div class="cell code" data-execution_count="104" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="2THNWkTSce4t" data-outputId="913d8e5d-5bcc-40a9-b8cc-10e7e34cb471">
+<div class="sourceCode" id="cb60"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>data_company.loc[:,<span class="st">&#39;Funds_in_million&#39;</span>] <span class="op">=</span> data_company[<span class="st">&#39;Funding&#39;</span>].<span class="bu">apply</span> (<span class="kw">lambda</span> x: <span class="bu">float</span>(x[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>])<span class="op">/</span><span class="dv">1000</span> <span class="cf">if</span> x[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">&#39;K&#39;</span> <span class="cf">else</span> (<span class="bu">float</span>(x[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>])<span class="op">*</span><span class="dv">1000</span> <span class="cf">if</span> x[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">&#39;B&#39;</span> <span class="cf">else</span> <span class="bu">float</span>(x[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>])))</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.7/dist-packages/pandas/core/indexing.py:1667: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self.obj[key] = value
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="FPt84Em8a41X">
+<p>C. Plot box plot for funds in million. [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="105" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="Xi4yUHhDOP0G" data-outputId="68e4d47a-5247-4bd7-9251-a247014d1997">
+<div class="sourceCode" id="cb62"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>data_company.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="105">
+
+  <div id="df-9bec2da8-f39a-4b4c-b0cf-9d2a784b08e7">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Startup</th>
+      <th>Product</th>
+      <th>Funding</th>
+      <th>Event</th>
+      <th>Result</th>
+      <th>OperatingState</th>
+      <th>Funds_in_million</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>3DLT</td>
+      <td>3dlt.com</td>
+      <td>$630K</td>
+      <td>Disrupt NYC 2013</td>
+      <td>Contestant</td>
+      <td>Closed</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3Dprintler</td>
+      <td>3dprintler.com</td>
+      <td>$1M</td>
+      <td>Disrupt NY 2016</td>
+      <td>Audience choice</td>
+      <td>Operating</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5to1</td>
+      <td>5to1.com</td>
+      <td>$19.3M</td>
+      <td>TC50 2009</td>
+      <td>Contestant</td>
+      <td>Acquired</td>
+      <td>19.30</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>8 Securities</td>
+      <td>8securities.com</td>
+      <td>$29M</td>
+      <td>Disrupt Beijing 2011</td>
+      <td>Finalist</td>
+      <td>Operating</td>
+      <td>29.00</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>AdhereTech</td>
+      <td>adheretech.com</td>
+      <td>$1.8M</td>
+      <td>Hardware Battlefield 2014</td>
+      <td>Contestant</td>
+      <td>Operating</td>
+      <td>1.80</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9bec2da8-f39a-4b4c-b0cf-9d2a784b08e7')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-9bec2da8-f39a-4b4c-b0cf-9d2a784b08e7 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-9bec2da8-f39a-4b4c-b0cf-9d2a784b08e7');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="106" data-colab="{&quot;height&quot;:508,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="skD6JZIya5bE" data-outputId="dae89921-43b6-4d20-e895-bd677fbf6253">
+<div class="sourceCode" id="cb63"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>data_company[<span class="st">&#39;Funding&#39;</span>] <span class="op">=</span> data_company[<span class="st">&#39;Funding&#39;</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="bu">float</span>(x[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>])<span class="op">/</span><span class="dv">1000</span> <span class="cf">if</span> x[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">&#39;K&#39;</span> <span class="cf">else</span> (<span class="bu">float</span>(x[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>])<span class="op">*</span><span class="dv">1000</span> <span class="cf">if</span> x[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">&#39;B&#39;</span> <span class="cf">else</span> <span class="bu">float</span>(x[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>])))</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>data_company[<span class="st">&#39;Funding&#39;</span>] <span class="op">=</span> pd.to_numeric(data_company[<span class="st">&#39;Funding&#39;</span>])</span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>data_company.describe()</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  &quot;&quot;&quot;Entry point for launching an IPython kernel.
+/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="106">
+
+  <div id="df-c416e627-d6d7-4dc6-b38e-17065edcb188">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Funding</th>
+      <th>Funds_in_million</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>448.000000</td>
+      <td>448.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>17.182375</td>
+      <td>17.182375</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>90.285396</td>
+      <td>90.285396</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.005000</td>
+      <td>0.005000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.745750</td>
+      <td>0.745750</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2.250000</td>
+      <td>2.250000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>9.425000</td>
+      <td>9.425000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1700.000000</td>
+      <td>1700.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c416e627-d6d7-4dc6-b38e-17065edcb188')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-c416e627-d6d7-4dc6-b38e-17065edcb188 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-c416e627-d6d7-4dc6-b38e-17065edcb188');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="107" data-colab="{&quot;height&quot;:279,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="dHWBAOVyOGXD" data-outputId="ed878d42-b544-441a-8de4-fa7684af96ff">
+<div class="sourceCode" id="cb65"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span> data_company[<span class="st">&#39;Funding&#39;</span>])</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Funding in Millions&quot;</span>)</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/1c4b66bdcbf491a8e1ac035525ad64a3fb7af16b.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="eODqub-3a9rP">
+<p>D. Check the number of outliers greater than the upper fence. [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="108" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="dnVAx8cRa-R_" data-outputId="a95c711d-a9f3-4783-a452-92f98353aab0">
+<div class="sourceCode" id="cb66"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>q1 <span class="op">=</span> data_company[<span class="st">&#39;Funding&#39;</span>].quantile(<span class="fl">0.25</span>)</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>q3 <span class="op">=</span> data_company[<span class="st">&#39;Funding&#39;</span>].quantile(<span class="fl">0.75</span>)</span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>iqr <span class="op">=</span> q3 <span class="op">-</span> q1</span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check number of outliers greater than upper fence.</span></span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>upper_fence <span class="op">=</span> q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>data_company[data_company[<span class="st">&#39;Funding&#39;</span>] <span class="op">&gt;</span> upper_fence].shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="108">
+<pre><code>(60, 7)</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="bcJTTyPubEqt">
+<p>E. Check frequency of the OperatingState features classes. [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="109" data-colab="{&quot;height&quot;:295,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="FzlOi5QubFGv" data-outputId="5c4bc41e-a418-461b-b1c8-3902cf849007">
+<div class="sourceCode" id="cb68"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>sns.histplot(data_company[<span class="st">&#39;OperatingState&#39;</span>])</span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Operating state frequency plot&quot;</span>)</span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;operating state&quot;</span>)</span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/b07986237eff4adb66f13ff550245e91786a83d4.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="xqNI9fpCQnrd">
+<ol>
+<li>Statistical Analysis: [10 Marks]</li>
+</ol>
+<p>A. Is there any significant difference between Funds raised by companies that are still operating vs companies that closed down? [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="110" id="s4hox_QQR0vU">
+<div class="sourceCode" id="cb69"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co">#There is no significant difference between funds raised by companies that ate still operating vs companies that closed down.</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="6tGAsUVYR0Qx">
+<p>B. Write the null hypothesis and alternative hypothesis. [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="111" id="nM9A0tOiR2CN">
+<div class="sourceCode" id="cb70"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="co">#H0: There is no significant difference between funds raised by companies that ate still operating vs companies that closed down.</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Ha: There is significant difference between funds raised by companies that ate still operating vs companies that closed down.</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="s2ARoNL1R2ds">
+<p>C. Test for significance and conclusion [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="112" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="kMKLE7mwR237" data-outputId="8e8bfa73-0bcf-42a5-bcc6-e9eeb31b3bce">
+<div class="sourceCode" id="cb71"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>comp_operational <span class="op">=</span> data_company[data_company[<span class="st">&#39;OperatingState&#39;</span>] <span class="op">==</span> <span class="st">&quot;Operating&quot;</span>]</span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>comp_closed <span class="op">=</span> data_company[data_company[<span class="st">&#39;OperatingState&#39;</span>] <span class="op">==</span> <span class="st">&quot;Closed&quot;</span>]</span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>tstat,pval <span class="op">=</span> stats.ttest_ind(comp_operational[<span class="st">&#39;Funding&#39;</span>],comp_closed[<span class="st">&#39;Funding&#39;</span>])</span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> pval <span class="op">&lt;</span> <span class="fl">0.05</span>:</span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a> <span class="bu">print</span>(<span class="ss">f&#39;With a p-value of </span><span class="sc">{</span><span class="bu">round</span>(pval,<span class="dv">4</span>)<span class="sc">}</span><span class="ss"> the difference is significant. aka |We reject the null| Hence we conclude There is significant difference between funds raisedby companies that ate still operating vs companies that closed down.&#39;</span>)</span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a> <span class="bu">print</span>(<span class="ss">f&#39;With a p-value of </span><span class="sc">{</span><span class="bu">round</span>(pval,<span class="dv">4</span>)<span class="sc">}</span><span class="ss"> the difference is not significant. aka |We fail to reject the null| Hence we conclude There is no significant difference between funds raised by companies that ate still operating vs companies that closed down.&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>With a p-value of 0.2531 the difference is not significant. aka |We fail to reject the null| Hence we conclude There is no significant difference between funds raised by companies that ate still operating vs companies that closed down.
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="P9VDhPTVR3Ml">
+<p>D. Make a copy of the original data frame. [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="113" id="9RoknPO2R3mB">
+<div class="sourceCode" id="cb73"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>data_company_new <span class="op">=</span> data_company.copy()</span></code></pre></div>
+</div>
+<div class="cell markdown" id="4x5br2rqR4JM">
+<p>E. Check frequency distribution of Result variables. [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="114" data-colab="{&quot;height&quot;:621,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="tipZWxRbR4kB" data-outputId="b8c75359-4eef-47d4-bba3-b97b5e5f6908">
+<div class="sourceCode" id="cb74"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">10</span>))</span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>sns.histplot(data_company_new[<span class="st">&#39;Result&#39;</span>])</span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Result frequency plot&quot;</span>)</span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Result&quot;</span>)</span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_abfdb948fd2945d9a522827065061f0c/8d0effee7a7e4e7b5301add8711377e3a8d5e7b2.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="GPWKf1pdR5E6">
+<p>F. Calculate percentage of winners that are still operating and percentage of contestants that are still operating [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="115" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="Y37ED9hkSHIj" data-outputId="90352772-e44f-43e4-d33b-313a119d0bab">
+<div class="sourceCode" id="cb75"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the no of winners and contestants from the company data which are still operational</span></span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a>operational_df <span class="op">=</span> data_company_new[data_company_new[<span class="st">&quot;OperatingState&quot;</span>] <span class="op">==</span> <span class="st">&quot;Operating&quot;</span>]</span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a>operational_df_winners <span class="op">=</span> operational_df[operational_df[<span class="st">&#39;Result&#39;</span>] <span class="op">==</span> <span class="st">&#39;Winner&#39;</span>].count()[<span class="dv">0</span>]</span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-5"><a href="#cb75-5" aria-hidden="true" tabindex="-1"></a>operational_df_contestants <span class="op">=</span> operational_df[operational_df[<span class="st">&#39;Result&#39;</span>] <span class="op">==</span> <span class="st">&#39;Contestant&#39;</span>].count()[<span class="dv">0</span>]</span>
+<span id="cb75-6"><a href="#cb75-6" aria-hidden="true" tabindex="-1"></a>total_winners <span class="op">=</span> data_company_new[data_company_new[<span class="st">&#39;Result&#39;</span>] <span class="op">==</span> <span class="st">&#39;Winner&#39;</span>].count()[<span class="dv">0</span>]</span>
+<span id="cb75-7"><a href="#cb75-7" aria-hidden="true" tabindex="-1"></a>total_contestants <span class="op">=</span> data_company_new[data_company_new[<span class="st">&#39;Result&#39;</span>] <span class="op">==</span> <span class="st">&#39;Contestant&#39;</span>].count()[<span class="dv">0</span>]</span>
+<span id="cb75-8"><a href="#cb75-8" aria-hidden="true" tabindex="-1"></a>per_winner_operational <span class="op">=</span> (operational_df_winners<span class="op">/</span>total_winners)<span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb75-9"><a href="#cb75-9" aria-hidden="true" tabindex="-1"></a>per_contestant_operational <span class="op">=</span> (operational_df_contestants<span class="op">/</span>total_contestants)<span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb75-10"><a href="#cb75-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;percentage of winners who are still operating </span><span class="sc">{</span><span class="bu">round</span>(per_winner_operational, <span class="dv">2</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb75-11"><a href="#cb75-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;percentage of contenstants who are still operating </span><span class="sc">{</span><span class="bu">round</span>(per_contestant_operational, <span class="dv">2</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>percentage of winners who are still operating 72.0
+percentage of contenstants who are still operating 68.47
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="8qAVreYASHlY">
+<p>G. Write your hypothesis comparing the proportion of companies that are operating between winners and contestants: [2 Mark]</p>
+<p>H. Test for significance and conclusion [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="116" id="GBfFmlw_SID3">
+<div class="sourceCode" id="cb77"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co">#H0: There is no significant difference between the proportion of companies that are operating between winners and contestants.</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Ha: There is significant difference between the proportion of companies that are operating between winners and contestants.</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="117" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="viPuc4HuSKJg" data-outputId="b6ea0dca-b224-4735-e4d2-a006f6979dcc">
+<div class="sourceCode" id="cb78"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>stat,pval <span class="op">=</span> proportions_ztest([operational_df_winners,operational_df_contestants],[total_winners,total_contestants])</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> pval <span class="op">&lt;</span> <span class="fl">0.05</span>:</span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a> <span class="bu">print</span>(<span class="ss">f&#39;With a p-value of </span><span class="sc">{</span><span class="bu">round</span>(pval,<span class="dv">4</span>)<span class="sc">}</span><span class="ss"> the difference is significant. aka |We reject the null| Hence we conclude There is significant difference between the proportion of companies that are operating between winners and contestants&#39;</span>)</span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb78-5"><a href="#cb78-5" aria-hidden="true" tabindex="-1"></a> <span class="bu">print</span>(<span class="ss">f&#39;With a p-value of </span><span class="sc">{</span><span class="bu">round</span>(pval,<span class="dv">4</span>)<span class="sc">}</span><span class="ss"> the difference is not significant. aka |We fail to reject the null| Hence we conclude There is no significant difference&#39;</span> )</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>With a p-value of 0.7142 the difference is not significant. aka |We fail to reject the null| Hence we conclude There is no significant difference
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="uYXR_wWnSKbh">
+<p>I. Select only the Event that has ‘disrupt’ keyword from 2013 onwards. [1 Mark]</p>
+</div>
+<div class="cell code" data-execution_count="118" data-colab="{&quot;height&quot;:424,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="N6ssWJ8dSO9e" data-outputId="a0104acb-fdd3-45e4-c39f-bf029fb2eea9">
+<div class="sourceCode" id="cb80"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>events_data <span class="op">=</span> data_company_new[data_company_new[<span class="st">&quot;Event&quot;</span>].<span class="bu">str</span>.contains(<span class="st">&#39;Disrupt&#39;</span>)].copy()</span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Split event data to get event name, event location, and event year.</span></span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a>events_data[[<span class="st">&#39;EventName&#39;</span>,<span class="st">&#39;EventLocation&#39;</span>,<span class="st">&#39;EventYear&#39;</span>]] <span class="op">=</span> events_data[<span class="st">&#39;Event&#39;</span>].<span class="bu">str</span>.split(<span class="st">&#39; &#39;</span>,expand<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace &quot;-&quot; character to NAN</span></span>
+<span id="cb80-5"><a href="#cb80-5" aria-hidden="true" tabindex="-1"></a>events_data[<span class="st">&#39;EventYear&#39;</span>] <span class="op">=</span> events_data[<span class="st">&#39;EventYear&#39;</span>].replace(<span class="st">&#39;-&#39;</span>, np.nan)</span>
+<span id="cb80-6"><a href="#cb80-6" aria-hidden="true" tabindex="-1"></a>events_data[<span class="st">&quot;EventYear&quot;</span>] <span class="op">=</span> pd.to_numeric(events_data[<span class="st">&quot;EventYear&quot;</span>])</span>
+<span id="cb80-7"><a href="#cb80-7" aria-hidden="true" tabindex="-1"></a>events_data[<span class="st">&quot;EventYear&quot;</span>].describe()</span>
+<span id="cb80-8"><a href="#cb80-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-9"><a href="#cb80-9" aria-hidden="true" tabindex="-1"></a>events_data <span class="op">=</span> events_data[events_data[<span class="st">&quot;EventYear&quot;</span>] <span class="op">&gt;=</span> <span class="dv">2013</span>]</span>
+<span id="cb80-10"><a href="#cb80-10" aria-hidden="true" tabindex="-1"></a>events_data</span></code></pre></div>
+<div class="output execute_result" data-execution_count="118">
+
+  <div id="df-ac724ff9-c47a-4049-8313-f625c20b7cf1">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Startup</th>
+      <th>Product</th>
+      <th>Funding</th>
+      <th>Event</th>
+      <th>Result</th>
+      <th>OperatingState</th>
+      <th>Funds_in_million</th>
+      <th>EventName</th>
+      <th>EventLocation</th>
+      <th>EventYear</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>3DLT</td>
+      <td>3dlt.com</td>
+      <td>0.630</td>
+      <td>Disrupt NYC 2013</td>
+      <td>Contestant</td>
+      <td>Closed</td>
+      <td>0.630</td>
+      <td>Disrupt</td>
+      <td>NYC</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3Dprintler</td>
+      <td>3dprintler.com</td>
+      <td>1.000</td>
+      <td>Disrupt NY 2016</td>
+      <td>Audience choice</td>
+      <td>Operating</td>
+      <td>1.000</td>
+      <td>Disrupt</td>
+      <td>NY</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Agrilyst</td>
+      <td>agrilyst.com</td>
+      <td>1.000</td>
+      <td>Disrupt SF 2015</td>
+      <td>Winner</td>
+      <td>Operating</td>
+      <td>1.000</td>
+      <td>Disrupt</td>
+      <td>SF</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Aiden</td>
+      <td>aiden.ai</td>
+      <td>0.750</td>
+      <td>Disrupt London 2016</td>
+      <td>Contestant</td>
+      <td>Operating</td>
+      <td>0.750</td>
+      <td>Disrupt</td>
+      <td>London</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Aircall</td>
+      <td>aircall.io</td>
+      <td>11.600</td>
+      <td>Disrupt SF 2015</td>
+      <td>Contestant</td>
+      <td>Operating</td>
+      <td>11.600</td>
+      <td>Disrupt</td>
+      <td>SF</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>641</th>
+      <td>Workspot</td>
+      <td>workspot.com</td>
+      <td>15.800</td>
+      <td>Disrupt NYC 2013</td>
+      <td>Contestant</td>
+      <td>Operating</td>
+      <td>15.800</td>
+      <td>Disrupt</td>
+      <td>NYC</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>642</th>
+      <td>Xendo</td>
+      <td>xendo.com</td>
+      <td>0.028</td>
+      <td>Disrupt SF 2014</td>
+      <td>Contestant</td>
+      <td>Acquired</td>
+      <td>0.028</td>
+      <td>Disrupt</td>
+      <td>SF</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>646</th>
+      <td>YayPay Inc</td>
+      <td>yaypay.com</td>
+      <td>0.900</td>
+      <td>Disrupt London 2015</td>
+      <td>Contestant</td>
+      <td>Operating</td>
+      <td>0.900</td>
+      <td>Disrupt</td>
+      <td>London</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>656</th>
+      <td>Zenefits</td>
+      <td>zenefits.com</td>
+      <td>583.600</td>
+      <td>Disrupt NYC 2013</td>
+      <td>Finalist</td>
+      <td>Operating</td>
+      <td>583.600</td>
+      <td>Disrupt</td>
+      <td>NYC</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>660</th>
+      <td>Zula</td>
+      <td>zulaapp.com</td>
+      <td>3.400</td>
+      <td>Disrupt SF 2013</td>
+      <td>Audience choice</td>
+      <td>Operating</td>
+      <td>3.400</td>
+      <td>Disrupt</td>
+      <td>SF</td>
+      <td>2013</td>
+    </tr>
+  </tbody>
+</table>
+<p>194 rows × 10 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ac724ff9-c47a-4049-8313-f625c20b7cf1')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-ac724ff9-c47a-4049-8313-f625c20b7cf1 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-ac724ff9-c47a-4049-8313-f625c20b7cf1');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+</body>
+</html>
